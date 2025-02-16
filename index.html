@@ -70,9 +70,27 @@
             <p>Deixe seus dados para contato:</p>
             <Form action="">
                 <label for="Nome completo">Nome completo:</label>
-                <input type="text" id="Nome completo" name="Nome completo">
-                <label for="E-mail">E-mail:</label>
-                <input type="text" id="E-mail" name="E-mail">
+                <input type="text" id="Nome completo" name="Nome completo" required> <br>
+                
+                <label for="Email">E-mail:</label>
+                <input type="email" id="Email" name="Email" required><br>
+
+                <label for="Assunto">Assunto:</label><br>
+                <select name="Assunto" id="AssuntoComunicacao">
+                    <option value="Orcamento">Orçamento</option>
+                    <option value="Duvida">Dúvida</option>
+                    <option value="Outros">Outros</option>
+                </select><br>
+
+                <label for="Mensagem" id="Mensagem">Mensagem:</label><br>
+                <textarea name="TxtMensagem" id="TxtMensagem" cols="20" rows="5" required></textarea><br>
+
+                <input type="checkbox" id="Inscricao" name="Inscricao">
+                <label for="Inscricao">Deseja receber as novidades do site?</label><br>
+
+                <input type="submit" value="Enviar mensagem">
+
+
             </Form>
         </section>
     </footer>
